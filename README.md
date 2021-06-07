@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Blogr Landing Page Solution](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub/htmlcsssassjavascriptflexbox-7k8375yN6)
+- Solution URL: [Loopstudios Landing Page Solution](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub/html5-sass-css-javascriptflexbox-grid-UQrPcdxcx)
 - Live Site URL: [Live Site](https://loopstudiios-landing-page.netlify.app/)
 
 ## My process
@@ -50,16 +50,16 @@ Users should be able to:
 
 Buliding this project was awesome :smiley: use of both the `Flexbox` and `Grid` makes this project interesting and coding the mobile menu is just amazing. You can build the array of images section by using `Flexbox` only but try using grid make your hands litlle dirty by using `Grid` and understand this layout on how it works and find out where we can implement `Grid` and when it is necessary. I think `Grid` is needed only for specfic sections that we want to display as a `Grid`.
 
-Feel free :cowboy_hat_face: to checkout the code and see what you can learn. :+1::thumbsup:
+Feel free :cowboy_hat_face: to checkout the code and see what you can learn. :thumbsup:
 
 ### Useful resources
 
 -[CSS Grid Detail](https://css-tricks.com/snippets/css/complete-guide-grid/).
-Please checkout the above link to understand `Grid` better in full depth, very nicely elucidated by the
+Please checkout the link to understand `Grid` better in full depth, very nicely elucidated by 
 Chris House.
 
 -[CSS Flexbox Detail](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
-Please checkout the above link to understand `Flexbox` better in full depth, very nicely elucidated by the
+Please checkout the link to understand `Flexbox` better in full depth, very nicely elucidated by 
 Chris Coyier.
 
 ## Author
