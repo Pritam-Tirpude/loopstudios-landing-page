@@ -1,0 +1,52 @@
+.header-container {
+  background: url("../images/desktop/image-hero.jpg") no-repeat center/cover;
+  min-height: 100vh;
+
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 10vh;
+    padding: 2rem;
+    @include flex(space-around, center, row);
+
+    .logo {
+      flex: 1 0 60%;
+    }
+    .nav-links {
+      @include flex(space-around, center, row);
+      flex: 1 0 40%;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $primary_white;
+        font-family: $font_alata;
+
+        &:hover {
+          text-decoration: 5px solid $primary_white underline;
+          text-underline-offset: 1rem;
+        }
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+  .intro-heading {
+    width: 45%;
+    border: 2px solid $primary_white;
+    padding: 5rem;
+    position: relative;
+    left: 7%;
+    margin-top: 14rem;
+    h1 {
+      color: $primary_white;
+      font-family: $font_josefin_sans;
+      font-size: 6rem;
+      text-transform: uppercase;
+      font-weight: lighter;
+    }
+  }
+}

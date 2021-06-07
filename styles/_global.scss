@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$header1: 5rem;
+$header2: 3.5rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.5rem;
+$header6: 1rem;
+
+$primary_white: hsl(0, 0%, 100%);
+$primary_black: hsl(0, 0%, 0%);
+$primary_dark_gray: hsl(0, 0%, 55%);
+$primary_very_dark_gray: hsl(0, 0%, 41%);
+
+$font_alata: "Alata", sans-serif;
+$font_josefin_sans: "Josefin Sans", sans-serif;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  overflow-x: hidden;
+}

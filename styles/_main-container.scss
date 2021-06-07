@@ -1,0 +1,302 @@
+.vr-section {
+  width: 90%;
+  height: 120vh;
+  margin: auto;
+  @include flex(center, center, row);
+
+  .vr-text {
+    background: $primary_white;
+    position: relative;
+    top: 15%;
+    left: -150px;
+    padding: 5rem;
+    h3 {
+      font-family: $font_josefin_sans;
+      text-transform: uppercase;
+      font-size: $header2;
+      font-weight: lighter;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-family: $font_alata;
+      color: $primary_dark_gray;
+    }
+  }
+}
+
+.creation-section {
+  width: 90%;
+  height: 150vh;
+  margin: auto;
+
+  .creation-heading {
+    @include flex(center, center, row);
+
+    h3 {
+      margin-right: auto;
+      font-family: $font_josefin_sans;
+      font-size: $header2;
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+
+    button {
+      background: none;
+      border: 2px solid $primary_black;
+      color: $primary_black;
+      letter-spacing: 0.2rem;
+      padding: 1rem 3rem;
+      font-family: $font_alata;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: lighter;
+      transition: background 0.5s ease;
+
+      &:hover {
+        color: $primary_white;
+        background: $primary_black;
+      }
+    }
+  }
+
+  .creation-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-gap: 16px;
+    margin-top: 5rem;
+
+    .earth {
+      position: relative;
+      margin-top: 3rem;
+      background: url("../images/desktop/image-deep-earth.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        float: bottom;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .arcade {
+      position: relative;
+      margin-top: 3rem;
+      background: url("../images/desktop/image-night-arcade.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .soccer {
+      position: relative;
+      margin-top: 3rem;
+      background: url("../images/desktop/image-soccer-team.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .grid {
+      position: relative;
+      margin-top: 3rem;
+      background: url("../images/desktop/image-grid.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .above {
+      position: relative;
+      margin-top: 0rem;
+      background: url("../images/desktop/image-from-above.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .pocket {
+      position: relative;
+      background: url("../images/desktop/image-pocket-borealis.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .curiosity {
+      position: relative;
+      background: url("../images/desktop/image-curiosity.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .fisheye {
+      position: relative;
+      background: url("../images/desktop/image-fisheye.jpg") no-repeat
+        center/contain;
+      transition: all 0.5s ease;
+      p {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $primary_white;
+        font-family: $font_josefin_sans;
+        font-size: $header3;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.footer-container {
+  @include flex(space-around, center, row);
+  background: $primary_black;
+  height: 50vh;
+  margin-top: 20rem;
+
+  .sitemap-section {
+    @include flex(center, center, column);
+    margin-right: 45rem;
+    .footer-logo {
+      align-self: baseline;
+    }
+    .links-footer {
+      @include flex(space-around, center, row);
+      margin-top: 2rem;
+      margin-left: -1rem;
+
+      li {
+        margin: 1rem;
+      }
+
+      li > a {
+        color: $primary_white;
+        text-decoration: none;
+        font-family: $font_alata;
+
+        &:hover {
+          text-decoration: 5px solid $primary_white underline;
+          text-underline-offset: 1rem;
+        }
+      }
+    }
+  }
+
+  .social-section {
+    .social-links {
+      @include flex(space-around, center, row);
+      align-self: auto;
+      margin-right: -2rem;
+      .fab {
+        color: $primary_white;
+
+        &:hover {
+          text-decoration: 5px solid $primary_white underline;
+          text-underline-offset: 1rem;
+        }
+      }
+    }
+
+    p {
+      margin-top: 2rem;
+      color: $primary_white;
+      font-family: $font_alata;
+      color: $primary_dark_gray;
+    }
+  }
+}

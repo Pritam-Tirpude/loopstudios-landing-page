@@ -1,0 +1,803 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  overflow-x: hidden;
+}
+
+.header-container {
+  background: url("../images/desktop/image-hero.jpg") no-repeat center/cover;
+  min-height: 100vh;
+}
+
+.header-container nav {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 10vh;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-container nav .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+}
+
+.header-container nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  list-style: none;
+}
+
+.header-container nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Alata", sans-serif;
+}
+
+.header-container nav .nav-links a:hover {
+  -webkit-text-decoration: 5px solid white underline;
+          text-decoration: 5px solid white underline;
+  text-underline-offset: 1rem;
+}
+
+.header-container nav .hamburger {
+  display: none;
+}
+
+.header-container .intro-heading {
+  width: 45%;
+  border: 2px solid white;
+  padding: 5rem;
+  position: relative;
+  left: 7%;
+  margin-top: 14rem;
+}
+
+.header-container .intro-heading h1 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.vr-section {
+  width: 90%;
+  height: 120vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.vr-section .vr-text {
+  background: white;
+  position: relative;
+  top: 15%;
+  left: -150px;
+  padding: 5rem;
+}
+
+.vr-section .vr-text h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+
+.vr-section .vr-text p {
+  margin-top: 2rem;
+  font-family: "Alata", sans-serif;
+  color: #8c8c8c;
+}
+
+.creation-section {
+  width: 90%;
+  height: 150vh;
+  margin: auto;
+}
+
+.creation-section .creation-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.creation-section .creation-heading h3 {
+  margin-right: auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-heading button {
+  background: none;
+  border: 2px solid black;
+  color: black;
+  letter-spacing: 0.2rem;
+  padding: 1rem 3rem;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: lighter;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.creation-section .creation-heading button:hover {
+  color: white;
+  background: black;
+}
+
+.creation-section .creation-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  grid-gap: 16px;
+  margin-top: 5rem;
+}
+
+.creation-section .creation-images .earth {
+  position: relative;
+  margin-top: 3rem;
+  background: url("../images/desktop/image-deep-earth.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .earth p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  float: bottom;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .earth:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.creation-section .creation-images .arcade {
+  position: relative;
+  margin-top: 3rem;
+  background: url("../images/desktop/image-night-arcade.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .arcade p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .arcade:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.creation-section .creation-images .soccer {
+  position: relative;
+  margin-top: 3rem;
+  background: url("../images/desktop/image-soccer-team.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .soccer p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .soccer:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.creation-section .creation-images .grid {
+  position: relative;
+  margin-top: 3rem;
+  background: url("../images/desktop/image-grid.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .grid p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .grid:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.creation-section .creation-images .above {
+  position: relative;
+  margin-top: 0rem;
+  background: url("../images/desktop/image-from-above.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .above p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .above:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.creation-section .creation-images .pocket {
+  position: relative;
+  background: url("../images/desktop/image-pocket-borealis.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .pocket p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .pocket:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.creation-section .creation-images .curiosity {
+  position: relative;
+  background: url("../images/desktop/image-curiosity.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .curiosity p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .curiosity:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.creation-section .creation-images .fisheye {
+  position: relative;
+  background: url("../images/desktop/image-fisheye.jpg") no-repeat center/contain;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.creation-section .creation-images .fisheye p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.creation-section .creation-images .fisheye:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: black;
+  height: 50vh;
+  margin-top: 20rem;
+}
+
+.footer-container .sitemap-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 45rem;
+}
+
+.footer-container .sitemap-section .footer-logo {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer-container .sitemap-section .links-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+  margin-left: -1rem;
+}
+
+.footer-container .sitemap-section .links-footer li {
+  margin: 1rem;
+}
+
+.footer-container .sitemap-section .links-footer li > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+}
+
+.footer-container .sitemap-section .links-footer li > a:hover {
+  -webkit-text-decoration: 5px solid white underline;
+          text-decoration: 5px solid white underline;
+  text-underline-offset: 1rem;
+}
+
+.footer-container .social-section .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: auto;
+      align-self: auto;
+  margin-right: -2rem;
+}
+
+.footer-container .social-section .social-links .fab {
+  color: white;
+}
+
+.footer-container .social-section .social-links .fab:hover {
+  -webkit-text-decoration: 5px solid white underline;
+          text-decoration: 5px solid white underline;
+  text-underline-offset: 1rem;
+}
+
+.footer-container .social-section p {
+  margin-top: 2rem;
+  color: white;
+  font-family: "Alata", sans-serif;
+  color: #8c8c8c;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Alata", sans-serif;
+}
+
+.attribution a {
+  color: dimgray;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    background: url("../images/mobile/image-hero.jpg") no-repeat center/cover;
+  }
+  .header-container nav {
+    position: relative;
+  }
+  .header-container nav .logo {
+    z-index: 3;
+  }
+  .header-container nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    z-index: 2;
+    clip-path: circle(100px at 90% -50%);
+    -webkit-clip-path: circle(100px at 90% -50%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .header-container nav .nav-links li {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .header-container nav .nav-links li.animate {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .header-container nav .nav-links li:nth-child(1) {
+    -webkit-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+  }
+  .header-container nav .nav-links li:nth-child(2) {
+    -webkit-transition: all 0.5s ease 0.4s;
+    transition: all 0.5s ease 0.4s;
+  }
+  .header-container nav .nav-links li:nth-child(3) {
+    -webkit-transition: all 0.5s ease 0.6s;
+    transition: all 0.5s ease 0.6s;
+  }
+  .header-container nav .nav-links li:nth-child(4) {
+    -webkit-transition: all 0.5s ease 0.8s;
+    transition: all 0.5s ease 0.8s;
+  }
+  .header-container nav .nav-links li:nth-child(5) {
+    -webkit-transition: all 0.5s ease 1s;
+    transition: all 0.5s ease 1s;
+  }
+  .header-container nav .nav-links.open {
+    clip-path: circle(1500px at 90% -50%);
+    -webkit-clip-path: circle(1500px at 90% -50%);
+  }
+  .header-container nav .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .header-container .intro-heading {
+    width: 90%;
+    left: 5%;
+    padding: 3rem;
+  }
+  .header-container .intro-heading h1 {
+    font-size: 3.5rem;
+  }
+  .vr-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5rem;
+  }
+  .vr-section .vr-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .vr-section .vr-text {
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  .creation-section {
+    height: 250vh;
+  }
+  .creation-section .creation-heading {
+    text-align: center;
+    position: relative;
+  }
+  .creation-section .creation-heading h3 {
+    margin-right: 0rem;
+  }
+  .creation-section .creation-heading button {
+    display: none;
+  }
+  .creation-section .creation-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .creation-section .creation-images .earth {
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-deep-earth.jpg") no-repeat center/cover;
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+  }
+  .creation-section .creation-images .earth p {
+    top: 50%;
+    left: 10%;
+  }
+  .creation-section .creation-images .arcade {
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-night-arcade.jpg") no-repeat center/cover;
+  }
+  .creation-section .creation-images .arcade p {
+    top: 50%;
+    left: 10%;
+  }
+  .creation-section .creation-images .soccer {
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-soccer-team.jpg") no-repeat center/cover;
+  }
+  .creation-section .creation-images .soccer p {
+    top: 50%;
+    left: 10%;
+  }
+  .creation-section .creation-images .grid {
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-grid.jpg") no-repeat center/cover;
+  }
+  .creation-section .creation-images .grid p {
+    top: 50%;
+    left: 10%;
+  }
+  .creation-section .creation-images .above {
+    margin-top: 3rem;
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-from-above.jpg") no-repeat center/cover;
+  }
+  .creation-section .creation-images .above p {
+    top: 50%;
+    left: 10%;
+  }
+  .creation-section .creation-images .pocket {
+    margin-top: 3rem;
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-pocket-borealis.jpg") no-repeat center/cover;
+  }
+  .creation-section .creation-images .pocket p {
+    top: 50%;
+    left: 10%;
+  }
+  .creation-section .creation-images .curiosity {
+    margin-top: 3rem;
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-curiosity.jpg") no-repeat center/cover;
+  }
+  .creation-section .creation-images .curiosity p {
+    top: 50%;
+    left: 10%;
+  }
+  .creation-section .creation-images .fisheye {
+    margin-top: 3rem;
+    width: 90vw;
+    height: 500px;
+    background: url("../images/mobile/image-fisheye.jpg") no-repeat center/cover;
+  }
+  .creation-section .creation-images .fisheye p {
+    top: 50%;
+    left: 10%;
+  }
+  .footer-container {
+    margin-top: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 80vh;
+  }
+  .footer-container .sitemap-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0rem;
+  }
+  .footer-container .sitemap-section .footer-logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer-container .sitemap-section .links-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container .social-section .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 0rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .header-container nav .nav-links.open {
+    clip-path: circle(2000px at 90% -50%);
+    -webkit-clip-path: circle(2000px at 90% -50%);
+  }
+  .header-container .intro-heading {
+    width: 60%;
+    left: 7%;
+    top: 100px;
+    padding: 3rem;
+  }
+  .header-container .intro-heading h1 {
+    font-size: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
