@@ -218,8 +218,8 @@ body {
 }
 
 .creation-section .creation-images .earth:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .creation-section .creation-images .arcade {
@@ -241,8 +241,8 @@ body {
 }
 
 .creation-section .creation-images .arcade:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .creation-section .creation-images .soccer {
@@ -264,8 +264,8 @@ body {
 }
 
 .creation-section .creation-images .soccer:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .creation-section .creation-images .grid {
@@ -287,8 +287,8 @@ body {
 }
 
 .creation-section .creation-images .grid:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .creation-section .creation-images .above {
@@ -310,8 +310,8 @@ body {
 }
 
 .creation-section .creation-images .above:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .creation-section .creation-images .pocket {
@@ -332,8 +332,8 @@ body {
 }
 
 .creation-section .creation-images .pocket:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .creation-section .creation-images .curiosity {
@@ -354,8 +354,8 @@ body {
 }
 
 .creation-section .creation-images .curiosity:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .creation-section .creation-images .fisheye {
@@ -376,8 +376,8 @@ body {
 }
 
 .creation-section .creation-images .fisheye:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
+          filter: sepia(50%) grayscale(10%) hue-rotate(90deg);
 }
 
 .footer-container {
